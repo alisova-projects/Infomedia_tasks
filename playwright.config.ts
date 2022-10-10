@@ -36,7 +36,7 @@ const config: PlaywrightTestConfig = {
   use: {
     browserName: 'chromium',
     locale: 'en-En',
-		headless: false,
+		headless: true,
 		screenshot: 'on',
 		// trace - what happens on each and every step execution with complete log
 		trace: 'retain-on-failure',
