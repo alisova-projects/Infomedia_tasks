@@ -1,0 +1,29 @@
+{
+	"name": "pw_live_coding",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test:web": "npx playwright test tests/webTests/wikipedia.test.ts",
+		"test:api": "npx playwright test tests/apiTests/index.test.ts --workers=1",
+		"test:headed": "npx playwright test --headed",
+		"test:debug": "npx playwright test --debug",
+		"test:report": "npx playwright show-report",
+		"test:codegen": "npx playwright codegen https://google.com"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@playwright/test": "^1.26.1"
+	},
+	"dependencies": {
+		"@types/mocha": "^10.0.0",
+		"@types/node": "^18.8.0",
+		"axios": "^0.27.2",
+		"mocha": "^10.0.0",
+		"playwright": "^1.26.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	}
+}
